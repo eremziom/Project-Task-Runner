@@ -1,0 +1,213 @@
+/*variables*/
+$font-text-1: 'Dosis', sans-serif;
+$font-text-2: 'Amatic SC', cursive;
+$font-text-3: 'Dancing Script', cursive;
+$color-main: #B8860B;
+$color-background: #D3D3D3;
+
+/*global*/
+
+section {
+    padding: 90px 0;
+    
+    .section-title {
+        font-family: $font-text-1;
+        font-size: 40px;
+        text-align: center;
+        margin: 0 auto 10px;
+    }
+
+    .section-subtitle {
+        font-family: $font-text-2;
+        font-size: 30px;
+        text-align: center;
+        margin: 0 auto 40px;
+    }
+
+    .inner-subtitle {
+        font-family: $font-text-2;
+        font-size: 20px;
+        margin: 0;
+        padding: 20px 0 0 0;
+    }
+}
+
+.upper-section {
+    background-image: url(https://images.pexels.com/photos/1249214/pexels-photo-1249214.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-position: center;
+    background-size: cover;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 160px;
+    margin: 24px auto 0 auto;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: $color-main;
+    color: white;
+    font-family: $font-text-1;
+    font-size: 20px;
+}
+
+/*nav*/
+.nav-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 0 0 0;
+
+    .brand-name {
+        color: $color-main;
+        font-size: 30px;
+        font-family: $font-text-3;
+    }
+
+    .menu {
+        display: flex;
+        list-style-type: none;
+        text-decoration: none;
+
+        .menu-tab {
+            margin-right: 36px;
+            }
+
+        .menu-name {
+            color: black;
+            text-decoration: none;
+            font-family: $font-text-1;
+            font-size: 20px;
+        }
+        
+    }
+}
+
+/*splash*/
+.splash {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .splash-inner {
+        text-align: center;
+
+        .sub-title {
+            font-size: 45px;
+            font-family: $font-text-2;
+            font-style: italic;
+        }
+
+        .title {
+            font-size: 60px;
+            font-family: $font-text-1;
+        }
+    }
+}
+
+/*services*/
+.section-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .wrapper-box {
+        flex: 0 0 33.3333%;
+        text-align: center;
+
+        .fas-services {
+            font-size: 50px;
+            color: $color-main;
+            border-style: solid;
+            border-color: $color-main;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            line-height: 90px;
+        }
+
+        .inner-text {
+            font-family: $font-text-1;
+            padding: 0 10px;
+        }
+    }
+}
+
+/*portfolio*/
+.portfolio {
+    background-color: $color-background;
+    
+    .portfolio-box {
+    padding: 0 10px 30px;
+
+        .inner-box {
+            background-color: white;
+
+            .portfolio-text {
+                padding: 0 0 25px 0;
+                font-family: $font-text-1;
+            }
+        }
+
+        .portfolio-img {
+            height: 400px;
+            overflow: hidden;
+    
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+/*footer*/
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .footer-part {
+        flex: 0 0 33.3333%;
+    }
+
+    .footer-text {
+        color: $color-main;
+        font-family: $font-text-1;
+    }
+
+    .footer-box {
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        a {
+            font-size: 0;
+
+            i {
+               font-size: 20px; 
+               background-color: black;
+               width: 40px;
+               height: 40px;
+               border-radius: 50%;
+               line-height: 40px;
+               margin: 0 5px;
+               text-align: center;
+               color: white;
+            }
+        }
+    }
+}
+
+/*Media*/
+@media (max-width: 767px) {
+    .section-wrapper {
+        flex-direction: column;
+    }
+}
