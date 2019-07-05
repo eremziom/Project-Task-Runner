@@ -69,7 +69,6 @@ section {
     .menu {
         display: flex;
         list-style-type: none;
-        text-decoration: none;
 
         .menu-tab {
             margin-right: 36px;
@@ -206,8 +205,39 @@ section {
 }
 
 /*Media*/
+
+@media (max-width: 1200px) {
+    .section-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .wrapper-box {
+            flex: 0 0 50%;
+        }
+    }
+
+}
+
 @media (max-width: 767px) {
     .section-wrapper {
         flex-direction: column;
+    }
+
+    .nav-box {
+        flex-direction: column;
+
+    }
+
+    .menu {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .footer-wrapper {
+        flex-direction: column-reverse;
+
+        .footer-text {
+            text-align: center;
+        }
     }
 }
